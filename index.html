@@ -1,0 +1,70 @@
+<head>
+  <title>Subnet Calculator for IPV4</title>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <link href="bootstrap.css" type="text/css" rel="stylesheet" />
+
+  <link rel="stylesheet" type="text/css" href="network.css" />
+</head>
+
+<body>
+  <div class="calculator1">
+    <h1>Subnet Calculator for IPV4</h1>
+    <div class="panel">
+      <input
+        id="inpip"
+        class="form-control w-25 m-1"
+        type="text"
+        placeholder="Network address"
+      />
+
+      <input
+        id="prx"
+        class="form-control m-1"
+        type="text"
+        placeholder="Prefix"
+      />
+
+      <button class="btn btn-primary m-2" onclick="calc()">Calculate</button>
+
+      <br />
+
+      <br />
+      <label id="sub" class="output">Subnet Mask: </label>
+      <br />
+      <br />
+      <label id="nh" class="output">Network/Host: </label>
+      <br />
+      <br />
+      <label id="network" class="output">Network Address: </label>
+      <br />
+      <br />
+      <label id="broatcast" class="output">Broatcast Address: </label>
+      <br />
+      <br />
+      <label id="first" class="output">First Address: </label>
+      <br />
+      <br />
+      <label id="last" class="output">Last Address: </label>
+      <br />
+      <br />
+      <label id="number" class="output">All Hosts: </label>
+      <br />
+      <br />
+      <label id="usable" class="output">Usable Hosts: </label>
+    </div>
+  </div>
+  <div class="text">
+    <p>
+      The IP Subnet Calculator performs subnet calculations for the given
+      network address block, subnet mask, maximum required hosts per subnet and
+      determines the resulting broadcast address, subnet, Cisco wildcard mask
+      and host range.
+    </p>
+  </div>
+  <script src="calculator.js"></script>
+</body>
