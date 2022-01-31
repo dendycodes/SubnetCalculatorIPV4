@@ -6,65 +6,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-  <link href="bootstrap.css" type="text/css" rel="stylesheet" />
+  <link
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+    type="text/css"
+    rel="stylesheet"
+  />
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" type="text/css" href="network.css" />
 </head>
 
 <body>
-  <div class="calculator1">
-    <h1>Subnet Calculator for IPV4</h1>
-    <div class="panel">
-      <input
-        id="inpip"
-        class="form-control w-25 m-1"
-        type="text"
-        placeholder="Network address"
-      />
+  <div class="container">
+    <div id="login-box">
+      <div class="box">
+        <h2>Subnet Calculator for IPV4</h2>
+        <div class="input">
+          <input
+            id="inpip"
+            class="form-control w-25 m-1"
+            type="text"
+            placeholder="Network address | 192.168.100.25"
+          />
 
-      <input
-        id="prx"
-        class="form-control m-1"
-        type="text"
-        placeholder="Prefix"
-      />
+          <input
+            id="prx"
+            class="form-control m-1"
+            type="text"
+            placeholder="Prefix | 1-32"
+          />
 
-      <button class="btn btn-primary m-2" onclick="calc()">Calculate</button>
+          <button class="btn btn-primary m-2" onclick="calc()">
+            Calculate
+          </button>
+        </div>
 
-      <br />
-
-      <br />
-      <label id="sub" class="output">Subnet Mask: </label>
-      <br />
-      <br />
-      <label id="nh" class="output">Network/Host: </label>
-      <br />
-      <br />
-      <label id="network" class="output">Network Address: </label>
-      <br />
-      <br />
-      <label id="broatcast" class="output">Broatcast Address: </label>
-      <br />
-      <br />
-      <label id="first" class="output">First Address: </label>
-      <br />
-      <br />
-      <label id="last" class="output">Last Address: </label>
-      <br />
-      <br />
-      <label id="number" class="output">All Hosts: </label>
-      <br />
-      <br />
-      <label id="usable" class="output">Usable Hosts: </label>
+        <div class="panel">
+          <label id="sub" class="output">Subnet Mask: </label>
+          <br />
+          <br />
+          <label id="nh" class="output">Network/Host: </label>
+          <br />
+          <br />
+          <label id="network" class="output">Network Address: </label>
+          <br />
+          <br />
+          <label id="broatcast" class="output">Broatcast Address: </label>
+          <br />
+          <br />
+          <label id="first" class="output">First Address: </label>
+          <br />
+          <br />
+          <label id="last" class="output">Last Address: </label>
+          <br />
+          <br />
+          <label id="number" class="output">All Hosts: </label>
+          <br />
+          <br />
+          <label id="usable" class="output">Usable Hosts: </label>
+        </div>
+      </div>
     </div>
+    <a href="https://denizmemduev.netlify.com" target="_blank"
+      >Created by: Deniz Memduev</a
+    >
   </div>
-  <div class="text">
-    <p>
-      The IP Subnet Calculator performs subnet calculations for the given
-      network address block, subnet mask, maximum required hosts per subnet and
-      determines the resulting broadcast address, subnet, Cisco wildcard mask
-      and host range.
-    </p>
-  </div>
+  <div id="particles-js"></div>
   <script src="calculator.js"></script>
+  <script src="animation.js"></script>
 </body>

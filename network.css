@@ -1,78 +1,64 @@
-* {
-  margin: 0;
-  padding: 0;
+body,
+html {
+  height: 100%;
+  background-repeat: no-repeat; /*background-image: linear-gradient(rgb(12, 97, 33),rgb(104, 145, 162));*/
+  background: rgb(75, 75, 75);
+  position: relative;
+  font-family: "Chakra Petch", sans-serif;
+  color: white;
 }
-
-body {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: rgb(248, 248, 248);
-  width: 100%;
-  box-sizing: border-box;
-  padding-top: 4%;
-}
-
-.text {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  display: flex;
-  float: left;
-  padding: 50px;
-  overflow: hidden;
-
-  background-color: rgb(78, 78, 78);
-}
-.text p {
-  width: 51%;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  font-size: 17px;
-}
-input {
-  float: left;
-}
-.calculator1 {
-  width: 95%;
-  height: auto;
-  overflow: contain;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  flex-wrap: wrap;
-  box-sizing: border-box;
+#login-box {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 450px;
+  margin: 0 auto;
+  border: 1px solid black;
+  background: rgba(29, 29, 29, 0.384);
+  min-height: 350px;
   padding: 30px;
-  border-left: 1px solid rgb(223, 223, 223);
+  box-sizing: border-box;
+  z-index: 9999;
+  border-radius: 20px;
 }
 
-#inpip {
+#login-box .input {
+  display: flex;
+  margin-bottom: 20px;
 }
+#login-box .input input {
+  margin-right: 5px;
+  background-color: transparent;
+  color: white;
+  font-weight: 700;
+  border: 1.3px solid white;
+}
+
 .panel {
-  width: 100%;
-  height: 90%;
-
-  border-radius: 10px;
+  background-color: transparent;
 }
-#ip {
-  color: white;
-}
-
 #prx {
-  margin: 0px;
-  width: 100px;
+  width: 46%;
 }
 
-#prefix {
-  color: white;
+a {
+  background-color: white;
+  position: absolute;
+  right: 60px;
+  bottom: 60px;
+  color: black;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 999;
 }
 
-.output {
-  color: rgb(0, 0, 0);
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
 }
